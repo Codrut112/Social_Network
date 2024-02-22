@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sem7.UserController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Friends">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableView" layoutX="-1.0" onMouseClicked="#openChat" prefHeight="317.0" prefWidth="302.0">
+                          <columns>
+                            <TableColumn fx:id="tableColumnUtilizatorId" prefWidth="99.20001220703125" text="UserName" />
+                            <TableColumn fx:id="tableColumnFirstname" prefWidth="107.20001220703125" text="FirstName" />
+                              <TableColumn fx:id="tableColumnLastName" prefWidth="93.5999755859375" text="LastName" />
+                          </columns>
+                        </TableView>
+                        <Pane fx:id="chat" layoutX="427.0" layoutY="-2.0" prefHeight="370.0" prefWidth="174.0" visible="false">
+                           <children>
+
+
+                           </children>
+                        </Pane>
+                        <VBox layoutX="300.0" prefHeight="370.0" prefWidth="302.0" spacing="5" style="-fx-background-color: #5b2529;">
+                           <children>
+                              <ScrollPane fx:id="scrollPane1" fitToHeight="true" fitToWidth="true" prefHeight="265.0" prefWidth="592.0" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox fx:id="chatLog1" />
+                                 </content>
+                              </ScrollPane>
+                              <HBox spacing="5">
+                                 <children>
+                                    <TextArea fx:id="messageBox1" prefHeight="47.0" promptText="enter message..." HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="sendButton1" minWidth="52.0" mnemonicParsing="false" onAction="#setSendButtonAction" prefHeight="47.0" text="Send" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets topRightBottomLeft="5" />
+                           </padding>
+                        </VBox>
+
+                        <Button layoutX="94.0" layoutY="325.0" mnemonicParsing="false" onAction="#PreviousPage" text="&lt;" />
+                        <Button layoutX="138.0" layoutY="325.0" mnemonicParsing="false" onAction="#NextPage" text="&gt;" />
+                        <TextField fx:id="NumberOfFriendsShown" layoutX="240.0" layoutY="316.0" prefHeight="26.0" prefWidth="60.0" />
+                        <Button layoutX="249.0" layoutY="344.0" mnemonicParsing="false" onAction="#SetNumberOfFriends" text="Set" />
+                        <Label fx:id="CurrentPageFriends" layoutX="125.0" layoutY="328.0" prefHeight="18.0" prefWidth="0.0" text="1" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Email">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewEmail" prefHeight="258.0" prefWidth="302.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnUtilizatorIdEmail" prefWidth="99.20001220703125" text="UserName" />
+                              <TableColumn fx:id="tableColumnFirstnameEmail" prefWidth="107.20001220703125" text="FirstName" />
+                              <TableColumn fx:id="tableColumnLastNameEmail" prefWidth="93.5999755859375" text="LastName" />
+                           </columns>
+                        </TableView>
+                        <TextArea fx:id="messageBoxEmail" layoutX="303.0" layoutY="253.0" prefHeight="118.0" prefWidth="215.0" promptText="enter message..." />
+                        <Button fx:id="sendButtonEmail" layoutX="520.0" layoutY="254.0" minWidth="52.0" mnemonicParsing="false" onAction="#sendEmail" prefHeight="118.0" prefWidth="78.0" text="Send" />
+                        <Button layoutX="187.0" layoutY="287.0" mnemonicParsing="false" onAction="#NextPage" text="&gt;" />
+                        <Label fx:id="CurrentPageFriendsEmail" layoutX="171.0" layoutY="290.0" prefHeight="18.0" prefWidth="0.0" text="1" />
+                        <Button layoutX="139.0" layoutY="286.0" mnemonicParsing="false" onAction="#PreviousPage" text="&lt;" />
+                        <Button layoutX="234.0" layoutY="322.0" mnemonicParsing="false" onAction="#SetNumberOfFriends" text="Set" />
+                        <TextField fx:id="NumberOfFriendsShownEmail" layoutX="220.0" layoutY="286.0" prefHeight="26.0" prefWidth="60.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="All Users">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="46.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableViewAll" prefHeight="370.0" prefWidth="411.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnUtilizatorIdall" prefWidth="112.800048828125" text="UserName" />
+                              <TableColumn fx:id="tableColumnFirstnameall" prefWidth="149.5999755859375" text="FirstName" />
+                              <TableColumn fx:id="tableColumnLastNameall" prefWidth="148.79998779296875" text="LastName" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="480.0" layoutY="149.0" mnemonicParsing="false" onAction="#SendFriendRequest" text="Add Friend" />
+                        <Button layoutX="529.0" layoutY="214.0" mnemonicParsing="false" onAction="#NextPageUsers" text="&gt;" />
+                        <Label fx:id="CurrentPageUsers" layoutX="513.0" layoutY="218.0" prefHeight="18.0" prefWidth="0.0" text="1" />
+                        <Button layoutX="480.0" layoutY="214.0" mnemonicParsing="false" onAction="#PreviousPageUsers" text="&lt;" />
+                        <TextField fx:id="numberOfUsersText" layoutX="487.0" layoutY="288.0" prefHeight="26.0" prefWidth="60.0" />
+                        <Button layoutX="500.0" layoutY="252.0" mnemonicParsing="false" onAction="#SetNumberOfUsersShown" text="Set" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Friends Request">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewFrienships" onMousePressed="#FrienshipSelected" prefHeight="370.0" prefWidth="390.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnUtilizatorIdFriendships" prefWidth="99.20001220703125" text="UserName" />
+                              <TableColumn fx:id="tableColumnFirstnameFriendships" prefWidth="107.20001220703125" text="FirstName" />
+                              <TableColumn fx:id="tableColumnLastNameFrienships" prefWidth="92.80001220703127" text="LastName" />
+                              <TableColumn fx:id="tableColumnStatusFriendships" prefWidth="86.39990234375" text="Status" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="acceptFriendRequestButton" layoutX="461.0" layoutY="87.0" mnemonicParsing="false" onAction="#AcceptFriendRequest" text="Accept" visible="false" />
+                        <Button fx:id="rejectFriendRequestButton" layoutX="462.0" layoutY="185.0" mnemonicParsing="false" onAction="#RejectFriendRequest" text="Reject" visible="false" />
+                        <Button layoutX="511.0" layoutY="245.0" mnemonicParsing="false" onAction="#NextPageFriendships" text="&gt;" />
+                        <Button layoutX="437.0" layoutY="246.0" mnemonicParsing="false" onAction="#PreviousPageFriendships" text="&lt;" />
+                        <Label fx:id="CurrentPageFriendships" layoutX="483.0" layoutY="249.0" prefHeight="18.0" prefWidth="0.0" text="1" />
+                        <Button layoutX="470.0" layoutY="272.0" mnemonicParsing="false" onAction="#SetNumberOfFriendshipsShown" text="Set" />
+                        <TextField fx:id="numberOfFriendshipsText" layoutX="460.0" layoutY="307.0" prefHeight="26.0" prefWidth="60.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
