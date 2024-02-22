@@ -33,6 +33,6 @@ And the friend reqests you sent or received:
 
 ![Friend_Request](https://github.com/Codrut112/Social_Network/assets/118080484/8f5c460e-e56e-44af-a4e1-996bc2d419eb)
 
-You can also be loged in at multiple accounts in the same time.
+You can also be logged into multiple accounts simultaneously.
 
 ![image](https://github.com/Codrut112/Social_Network/assets/118080484/9e63cb50-8bd4-47b7-b89c-2d3b1f77583b)
