@@ -14,8 +14,17 @@ Login window:
 
 Register window: 
 
+![Register](https://github.com/Codrut112/Social_Network/assets/118080484/1f25d941-6075-4fe9-a921-18a48b481b2e)
+
+Friends list, you can talk with them.
+
+![Friends](https://github.com/Codrut112/Social_Network/assets/118080484/622f7cc6-e1a6-4a51-9163-9f4c3559de65)
 
 
-
-You can a message multiple friends:
+You can send a message multiple friends:
 ![Email](https://github.com/Codrut112/Social_Network/assets/118080484/8aab4aae-d790-4635-b665-4fea756d2417)
+
+All the users, you can send friend requests:
+
+![ALL](https://github.com/Codrut112/Social_Network/assets/118080484/bd23d276-6cce-4187-9e27-0bfc5323d8b3)
+
