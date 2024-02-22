@@ -1,4 +1,4 @@
-#Retea_de_socializare
+# Retea_de_socializare
 
 Project with GUI
 
