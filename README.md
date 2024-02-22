@@ -13,4 +13,9 @@ Login window:
 
 
 Register window: 
+
+
+
+
+You can a message multiple friends:
 ![Email](https://github.com/Codrut112/Social_Network/assets/118080484/8aab4aae-d790-4635-b665-4fea756d2417)
