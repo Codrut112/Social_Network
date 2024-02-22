@@ -7,4 +7,6 @@ During a semester-long project, I enhanced my Java proficiency and broadened my 
 Lets take a look at the application:
 
 Login window:
+
+
 ![Login](https://github.com/Codrut112/Social_Network/assets/118080484/4f893889-b87d-43a3-b01a-0705325b97f6)
