@@ -29,7 +29,7 @@ All the users, you can send friend requests:
 
 ![ALL](https://github.com/Codrut112/Social_Network/assets/118080484/bd23d276-6cce-4187-9e27-0bfc5323d8b3)
 
-And the friend reqests you sent or received: 
+And the friend requests you sent or received: 
 
 ![Friend_Request](https://github.com/Codrut112/Social_Network/assets/118080484/8f5c460e-e56e-44af-a4e1-996bc2d419eb)
 
