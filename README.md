@@ -12,4 +12,5 @@ Login window:
 ![Login](https://github.com/Codrut112/Social_Network/assets/118080484/4f893889-b87d-43a3-b01a-0705325b97f6)
 
 
-Register window:
+Register window: 
+https://github.com/Codrut112/Social_Network/issues/3
