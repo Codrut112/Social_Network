@@ -21,10 +21,13 @@ Friends list, you can talk with them.
 ![Friends](https://github.com/Codrut112/Social_Network/assets/118080484/622f7cc6-e1a6-4a51-9163-9f4c3559de65)
 
 
-You can send a message multiple friends:
+You can send a message to multiple friends:
 ![Email](https://github.com/Codrut112/Social_Network/assets/118080484/8aab4aae-d790-4635-b665-4fea756d2417)
 
 All the users, you can send friend requests:
 
 ![ALL](https://github.com/Codrut112/Social_Network/assets/118080484/bd23d276-6cce-4187-9e27-0bfc5323d8b3)
+
+And the status of your friend requests:
+![Friend_Request](https://github.com/Codrut112/Social_Network/assets/118080484/8f5c460e-e56e-44af-a4e1-996bc2d419eb)
 
